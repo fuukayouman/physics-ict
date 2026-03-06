@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grade 8</title>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+<style>
+body {
+  background-image: url('https://i.pinimg.com/736x/60/a4/84/60a484b6c2ba8abbafde4dfce05b156b.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Comic Neue', cursive;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px 120px 20px;
+  color: #333;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page-title {
+  background: rgba(255,255,255,0.9);
+  padding: 15px 40px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  font-size: 28px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Cleaner stacked card look */
+.container {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  max-width: 1000px;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.text {
+  padding: 30px;
+}
+
+.star-list {
+  list-style: none;
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+.star-list li {
+  position: relative;
+  margin-bottom: 8px;
+  padding-left: 22px;
+}
+
+.star-list li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: #99cfff;
+  font-size: 14px;
+}
+
+/* Better responsive video */
+iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.back-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 22px;
+  background-color: #99cfff;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(153, 207, 255, 0.4);
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #77bdff;
+  transform: translateX(-50%) translateY(-3px);
+}
+
+.chiikawa {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 80px;
+  opacity: 0.9;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.chiikawa:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+/* Mobile fix */
+@media (max-width: 600px) {
+  iframe {
+    height: 220px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page-title">
+  Grade 8 ✦₊˚
+</div>
+
+<div class="container">
+  <div class="text">
+    <h2>Matter & Atoms 𓏲ּ𝄢</h2>
+    <p><strong>States of Matter (Solid, Liquid, and Gas)</strong></p>
+    <p>
+      Matter is anything that has mass and takes up space, consisting of incredibly tiny particles called atoms and molecules.
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="text">
+    <h2>States of Matter ‧₊˚</h2>
+    <p>
+      Matter exists in three primary states: solid, liquid, and gas, each defined by how particles are arranged and move.
+    </p>
+
+    <iframe 
+      src="https://www.youtube.com/embed/f8ApXvVmZoQ"
+      title="Concept of Matter"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+     <img src="images/states of matter.png" alt="States of Matter" style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="text">
+    <h2>Atoms ‧₊˚</h2>
+    <p>Atoms serve as the fundamental units of elements, retaining unique chemical traits even when isolated.</p>
+    
+    <p><strong>Atom structure</strong></p>
+    <p>Atoms consist of a central nucleus housing protons (positively charged) and neutrons (no charge), surrounded by electrons (negatively charged). Historical models evolved: Democritus viewed atoms as indivisible; Thomson proposed electrons embedded in positive mass (plum pudding); Rutherford identified a dense nucleus with orbiting electrons; Bohr specified fixed orbits; modern quantum models describe electrons as probability clouds around the nucleus. Atomic number equals proton count, defining the element; mass number reflects protons plus neutrons.</p>
+    
+    <p><strong>Atomic Symbols</strong></p>
+    <p>Symbols are concise notations from the periodic table, typically one or two letters, indicating the element. The atomic number (protons) appears above the symbol; average atomic mass (protons + neutrons) below. Neutral atoms balance protons and electrons.</p>
+    <a href="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html">Build an Atom</a>
+    <img src="images/atomic symbol.png" alt="atomic symbol" style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+
+    <p><strong>Isotopes</strong></p>
+    <p>Isotopes share the same atomic number (protons) but differ in neutron count, yielding varied mass numbers. This results in stable or unstable (radioactive) variants without altering chemical reactivity.</p>
+    <img src="images/isotopes.png" alt="isotopes" style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+
+    <p><strong>Atoms & Molecules</strong></p>
+    <p>Molecules arise when atoms chemically bond, forming either elemental molecules (same atom type) or compounds (different types). Bonding creates stable structures beyond individual atoms.</p>
+    <a href="https://phet.colorado.edu/sims/html/build-a-molecule/latest/build-a-molecule_all.html">Build a molecule</a>
+
+    <p><strong>Atoms & Ions</strong></p>
+    <p>Ions form when atoms gain or lose electrons, disrupting charge balance: fewer electrons create positive cations; more electrons yield negative anions. This differs from neutral atoms where protons equal electrons.</p>
+  </div> 
+</div>
+
+<div class="container">
+  <div class="text">
+    <h2>Periodic Table ‧₊˚</h2>
+    <p>The periodic table organizes all known elements by atomic number, revealing patterns in properties like metals versus non-metals.</p>
+
+    <p><strong>Metals and Non-Metals</strong></p>
+    <p>Metals occupy the left and center of the periodic table (left of the zigzag stair-step line from boron to astatine), showing traits like high electrical/thermal conductivity, malleability, ductility, luster, and tendency to lose electrons forming positive ions. Non-metals sit on the right side (including hydrogen), characterized by poor conductivity, brittleness, dullness, and gaining electrons to form negative ions; they often exist as gases, liquids, or brittle solids vital for biological roles. Metalloids (e.g., along the line like silicon, boron) blend properties of both.</p>
+    <img src="images/periodictable.png" alt="periodic table" style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+
+        <iframe 
+      src="https://www.youtube.com/embed/G6wzlwB_wxc?si=z17oVuFuiC1ExqrK"
+      title="how to read periodic table"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+    <p><strong>Periods and Groups</strong></p>
+    <p>Periodic table highlighting the location of nonmetal elements. Periods are horizontal rows (1-7), where elements gain protons left-to-right, increasing atomic size minimally while valence electrons fill shells, shifting from metals to non-metals across a row. Groups (columns, numbered 1-18) share vertical similarities: same valence electron count yields parallel chemical behaviors, like Group 1 (alkali metals) highly reactive or Group 17 (halogens) electron-seeking.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="text">
+    <h2>Elements, Compounds & Mixture ‧₊˚</h2>
+    <p>Elements, compunds, and mixtures, classify all matter based on composition and bonding.</p>
+    <img src="images/elementscompundmixture.png" alt="Elements, compunds, mixtures" style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+    <p>Elements contain only one type of atom, cannot be broken down further, and represent pure substances like those listed in the periodic table. Compounds form when two or more different elements chemically bond in fixed ratios, creating new properties separable only by chemical reactions; mixtures combine substances physically without bonding, allowing variable ratios and physical separation.</p>
+    
+    <p><strong>Seperation Methods</strong></p>
+    <p>Solutions (homogeneous, solute fully dissolved) separate via evaporation or distillation; colloids (particles dispersed but not settled, like milk) use centrifugation; suspensions (larger particles settle out) employ filtration or sedimentation.</p>
+
+    <p><strong>Physical Changes</strong></p>
+    <p>These alter forms without changing composition, are often reversible, and include processes like melting or mixing without chemical bonds breaking.</p>
+
+    <p><strong>Chemical Changes</strong></p>
+    <p>These rearrange atoms into new substances via reactions, typically irreversible, involving bond breaking/forming like rusting or burning.</p>
+        <img src="images/changes.png" alt="changes" style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+  </div>
+</div>
+
+<div class="container">
+  <div class="text">
+    <h2>Balancing Equations ‧₊˚</h2>
+    <p>Chemical equations must equal atoms on both sides; adjust coefficients (not subscripts) to balance.</p>
+
+    <iframe 
+      src="https://www.youtube.com/embed/zmdxMlb88Fs"
+      title="Balancing Equations"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+
+    <p><strong>Quick Practice</strong></p>
+    <p>Balance the equation:</p>
+
+    <p style="font-size:20px; font-weight:bold;">
+      Fe + O₂ → Fe₂O₃
+    </p>
+
+    <input id="answer" type="text" placeholder="Type balanced equation here"
+    style="padding:8px; border-radius:8px; border:1px solid #ccc; width:80%; max-width:300px;">
+
+    <br><br>
+
+    <button onclick="checkAnswer()" 
+    style="padding:8px 15px; border:none; border-radius:10px; background:#99cfff; color:white; font-weight:bold; cursor:pointer;">
+      Check Answer
+    </button>
+
+    <p id="result" style="margin-top:10px; font-weight:bold;"></p>
+
+    <a href="https://phet.colorado.edu/sims/html/balancing-chemical-equations/latest/balancing-chemical-equations_en.html">
+      Balance chemical equation exercises
+    </a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="text">
+    <h2>Acid and Bases ‧₊˚</h2>
+    <p>Acids turn litmus red (pH 1-6), bases turn litmus blue (pH 8-14); universal indicators show pH color gradients, with 7 neutral.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="text">
+    <h2>Sources ‧₊˚</h2>
+    <ul class="star-list">
+      <li>Prompt 1 (https://notegpt.io/ai-image-generator?s=d9f5fe16-9fb3-4b71-b9bb-c0a7dfd3be91) Educational science illustration showing the three states of matter side by side. On the left, solid particles tightly packed in a neat, fixed arrangement, barely moving. In the middle, liquid particles close together but randomly arranged, flowing and sliding past each other. On the right, gas particles are far apart, spread out, moving quickly in all directions. Use simple circular particles with motion lines to show movement. Clean white background, labeled sections ‘Solid,’ ‘Liquid,’ and ‘Gas.’ Bright, kid-friendly colors, modern flat design, clear and easy to understand, like a school science diagram </li>
+      <li>Prompt 2 (https://notegpt.io/ai-image-generator?s=d9f5fe16-9fb3-4b71-b9bb-c0a7dfd3be91) Create an educational science diagram that explains the difference between elements, compounds, and mixtures, divided into three clearly labeled sections. In the first section, show an element made of only one kind of atom, represented by many identical spheres of the same color and size arranged in a simple pattern, with a label saying “Element – only one kind of atom.” In the second section, show a compound made of two or more different atoms chemically bonded together, such as groups of differently colored spheres connected in fixed sets, with all the molecules looking the same, labeled “Compound – different atoms chemically bonded.” In the third section, show a mixture where different types of particles, including single atoms and different molecules, are placed together randomly without bonds between them, using a variety of colors and shapes, labeled “Mixture – different substances physically mixed, not bonded.” Use a clean white background, simple circular particle designs, bright school-friendly color</li>
+      <li>Prompt 3 (https://chatgpt.com/c/699e7453-2f44-8321-acfc-c634a97ff68d) Create a clean, educational infographic of the full periodic table showing Periods 1–7 and Groups 1–18 clearly labeled, with elements color-coded: metals in blue on the left and center, non-metals in orange on the right side including hydrogen, and metalloids in green along the zigzag stair-step line from boron to astatine; include a visible stair-step boundary separating metals and non-metals, add short labels explaining that metals are shiny, good conductors, malleable, and lose electrons to form positive ions, non-metals are dull, poor conductors, brittle (if solid), and gain electrons to form negative ions, and metalloids have mixed properties; use a white background, modern flat classroom poster style, clear readable font, and place the title “Metals, Non-Metals, and Metalloids in the Periodic Table” at the top.</li>
+      <li>American Elements. (2024, August 31). Periodic table of the elements. https://www.americanelements.com/periodic-table-of-elements-reference.html</li>
+      <li>Basic Chemistry1.pdf. (2026). Thread attachment, File ID 41.</li>
+      <li>BBC Bitesize. (2024, July 10). Elements, compounds and mixtures. https://www.bbc.co.uk/bitesize/articles/zngddp3</li>
+      <li>BYJU'S. (2023, May 25). States of matter: Solid, liquid and gas. https://byjus.com/chemistry/matter-solid-liquid-gas/</li>
+      <li>ChemTalk. (2025, August 11). Periodic table metals and non-metals. https://chemistrytalk.org/periodic-table-metals-and-non-metals/</li>
+      <li>Enthu. (2026, January 25). Elements VS compounds VS mixtures. https://enthu.com/blog/chemistry/elements-vs-compounds-vs-mixtures</li>
+      <li>Introductory Chemistry. (2021, November 30). Classification of matter (solid, liquid, gas). https://uen.pressbooks.pub/introductorychemistry/chapter/classification-of-matter-solid-liquid-gas/</li>
+      <li>LibreTexts. (2022, July 11). 5.1: The periodic table. https://chem.libretexts.org/Courses/Portland_Community_College/CH151:_Preparatory_Chemistry/05:_The_Nuclei_of_Atoms/5.01:_The_Periodic_Table</li>
+      <li>LibreTexts. (2026, January 26). 7.6: Metals, nonmetals, and metalloids. https://chem.libretexts.org/Bookshelves/General_Chemistry/Map:_Chemistry_-_The_Central_Science_(Brown_et_al.)/07:_Periodic_Properties_of_the_Elements/7.06:_Metals_Nonmetals_and_Metalloids</li>
+      <li>LibreTexts. (2026, February 17). 3.3: Classifying matter according to its state—solid, liquid, and gas. https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/03:_Matter_and_Energy/3.03:_Classifying_Matter_According_to_Its_State</li>
+      <li>RSC Education. (2017, July 11). Chemical misconceptions II: Elements, compounds and mixtures. https://edu.rsc.org/resources/chemical-misconceptions-ii-elements-compounds-and-mixtures/1083.article</li>
+      <li>Save My Exams. (2025, November 3). Elements, compounds and mixtures - IGCSE revision notes. https://www.savemyexams.com/igcse/chemistry/cie/23/revision-notes/2-atoms-elements-and-compounds/2-1-atomic-structure-and-the-periodic-table/</li>
+      <li>Scribd. (2025, July 1). Understanding elements, compounds, mixtures | PDF. https://www.scribd.com/document/102126490/Elements-Compounds-Mixtures</li>
+      <li>Seneca Learning. (2012, May 11). Differences between elements, compounds & mixtures. https://senecalearning.com/en-GB/revision-notes/igcse/chemistry/cambridge-international/higher/2-1-1-differences-between-elements-compounds-and-mixtures</li>
+      <li>Siyavula. (n.d.). Non-metals (esaaf). https://www.siyavula.com/read/za/physical-sciences/grade-10/classification-of-matter/02-classification-of-matter-05</li>
+      <li>Wikipedia. (2001, October 27). Periodic table. https://en.wikipedia.org/wiki/Periodic_table</li>
+      <li>Basic Chemistry1.pdf. (2025)</li>
+    </ul>
+  </div>
+</div>
+
+<a href="index.html" class="back-btn">← Back</a>
+
+<img src="images/hachiwarechibi.png" alt="hachiware" class="chiikawa">
+
+<script>
+function checkAnswer() {
+
+  let userAnswer = document.getElementById("answer").value
+  .replace(/\s/g,'')
+  .toLowerCase();
+
+  let correct = "4fe+3o2→2fe2o3";
+  let correct2 = "4fe+3o2->2fe2o3";
+
+  if(userAnswer === correct || userAnswer === correct2){
+    document.getElementById("result").innerHTML = "✅ Correct! Great job!";
+  }
+  else{
+    document.getElementById("result").innerHTML = "❌ Try again!";
+  }
+
+}
+</script>
+
+</body>
+</html>

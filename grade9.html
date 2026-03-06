@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grade 9</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+  background-image: url('https://i.pinimg.com/736x/bd/6b/13/bd6b13baa773e465f4140aad86c409f0.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Comic Neue', cursive;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  min-height:100vh;
+  padding:40px 20px 120px 20px;
+  color:#333;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(15px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.page-title{
+  background:rgba(255,255,255,0.9);
+  padding:15px 40px;
+  border-radius:20px;
+  margin-bottom:30px;
+  font-size:28px;
+  box-shadow:0 6px 12px rgba(0,0,0,0.15);
+}
+
+.semester-wrapper{
+  display:flex;
+  gap:30px;
+  max-width:1100px;
+  width:100%;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.container{
+  background:rgba(255,255,255,0.9);
+  backdrop-filter: blur(6px);
+  border-radius:20px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.15);
+  width:450px;
+  padding:30px;
+}
+
+.container h2{
+  margin-top:0;
+}
+
+.container ul{
+  list-style:none;
+  padding:0;
+}
+
+.container li{
+  margin-bottom:10px;
+}
+
+/* ⭐ star list fix */
+.star-list{
+  list-style:none;
+  padding-left:25px;
+  margin-top:10px;
+}
+
+.star-list li{
+  position:relative;
+  margin-bottom:8px;
+  padding-left:22px;
+}
+
+.star-list li::before{
+  content:"★";
+  position:absolute;
+  left:0;
+  color:#ffd966;
+  font-size:14px;
+}
+
+.back-btn{
+  position:fixed;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  padding:12px 22px;
+  background-color:#fffa99;
+  color:#333;
+  text-decoration:none;
+  border-radius:15px;
+  font-weight:bold;
+  box-shadow:0 4px 10px rgba(255,253,153,0.4);
+  transition:0.3s ease;
+}
+
+.back-btn:hover{
+  background-color:#f5f2af;
+  transform:translateX(-50%) translateY(-3px);
+}
+
+.chiikawa{
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  width:70px;
+  opacity:0.9;
+  transition:0.3s ease;
+  cursor:pointer;
+}
+
+.chiikawa:hover{
+  transform:scale(1.15);
+  opacity:1;
+}
+
+@media (max-width:700px){
+
+  .semester-wrapper{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .container{
+    width:90%;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page-title">
+Grade 9 ✦₊˚
+</div>
+
+<div class="semester-wrapper">
+
+<div class="container">
+<h2>Semester 1 ┊ Dynamic Electricity 𓏵‧₊˚</h2>
+
+<ul>
+<li><strong>What is Dynamic Electricity?</strong></li>
+<li>
+Dynamic electricity is a continuous flow of electric charge (electric current)
+through a conductor, usually caused by a voltage source such as a battery.
+</li>
+</ul>
+
+<p><strong>Ohm's Law</strong></p>
+<p>Ohm's law explains the relationship between voltage, current, and resistance.
+Voltage causes current to flow, while resistance opposes the flow of current.</p>
+<p>If voltage increases, the current also increases when resistance stays the same.
+If resistance increases, the current decreases when voltage stays the same.</p>
+<img src="images/ohmslaw.png"alt="Ohm's law"style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+<a href="https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_en.html">Ohm's Law</a>
+
+<iframe width="460" height="315"
+src="https://www.youtube.com/embed/HsLLq6Rm5tU"
+title="Ohm's Law explanation"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+<p><strong>Conductors & Insulators</strong></p>
+<p>The atomic material determines resistivity, which affects how well electricity flows.</p>
+<ul class="star-list">
+<li><strong>Conductors:</strong> materials with low resistivity allowing charge to move freely. Examples include copper, silver, and gold.</li>
+<li><strong>Insulators:</strong> materials with high resistivity that prevent current flow. Examples include glass, rubber, and plastic.</li>
+</ul>
+<img src="images/conductorinsulator.png"alt="conductor and insulator"style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+<iframe width="460" height="315" src="https://www.youtube.com/embed/ZgDIX2GOaxQ?si=aZot-cUmIcGMe_NX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <a href="https://javalab.org/en/electric_current_en/">Electric Current</a>
+
+<p><strong>Electric current:</strong></p>
+<p>Electric current is the rate at which electrical charge flows past a specific point in a circuit. The strength of the current depends on the voltage applied and the resistance of the conductor, as described by Ohm’s Law: I=V/R. Electric current is measured in amperes (A) and is essential for powering devices, running circuits, and enabling modern electronics.</p>
+
+<p><strong>Electric charge: </strong></p>
+<p>Electric charge is the physical quantity that flows through a circuit to create electric current. In a common conductor like copper wire, these moving charges are specifically electrons. The amount of current depends on how much charge passes a point in a circuit per unit time. In other words, current is the rate of flow of electric charge, measured in amperes (A), where 1 ampere equals 1 coulomb of charge passing through a point per second. Without electric charge, there would be no current, making charge the fundamental source of electricity.</p>
+<img src="images/electriccharge.png"alt="electric charge"style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+
+<p><strong>Electric Field:</strong></p>
+<p> The area surrounding a charged object where other charges feel a force is known as an electric field. It establishes the direction that charges naturally flow. A positive charge's potential energy increases when it moves against the field, but it decreases when it moves with the field. </p>
+<img src="images/electricfield.png"alt="electric field"style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+
+<p><strong>Electric potential:</strong></p>
+<p>Electric potential, expressed in Volts (V), is the amount of potential energy that a unit charge possesses at a given moment. The change in potential between two points is known as the potential difference, or voltage. A battery supplies the energy needed to transfer charges from a circuit's low-potential negative terminal to its high-potential positive terminal. As charges move through the circuit, they release energy by exerting force on components like motors and lightbulbs.</p>
+
+<ul class="star-list">
+  <li><strong>Series Circuit: </strong>Series circuit is a circuit where all components are connected in one single path. This means the electric current flows through each component one after another. Because there is only one path, the same amount of current flows through every part of the circuit. If one component, like a light bulb, breaks or is removed, the whole circuit stops working because the path is broken. </li>
+  <li><strong>Parallel Circuit: </strong>Parallel circuit is a type of electrical circuit where the components are connected in separate branches. This means the electric current has more than one path to flow. In a parallel circuit, each component gets the same voltage, but the current is divided among the branches. If one component, like a light bulb, stops working, the other components can still work because the path is not completely broken. </li>
+  <img src="images/circuit.png"alt="circuit"style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+  <iframe width="460" height="315" src="https://www.youtube.com/embed/8Z0jhQeYDUE?si=zXddTbPpt5M6WAuF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <a href="https://phet.colorado.edu/sims/html/circuit-construction-kit-dc-virtual-lab/latest/circuit-construction-kit-dc-virtual-lab_all.html">Circuit Construction</a>
+
+  <p><strong>Sources:</strong></p>
+  <ul class="star-list">
+    <li>https://electricityforum.com/dynamic-electricity</li>
+    <li>https://www.fluke.com/en-id/learn/blog/electrical/what-is-ohms-law</li>
+    <li>https://notebooklm.google.com/notebook/8c227332-a269-493d-9b80-3df7632d196f?utm_source=classroom&utm_medium=referral&authuser=0</li>
+  </ul>
+</ul>
+</div>
+
+<div class="container">
+<h2>Semester 2 ┊ Magnetism 𓏵‧₊˚</h2>
+
+<ul>
+<li><strong>What is Magnetism?</strong></li>
+<li>Magnetism is a physical phenomenon related to magnetic fields, which causes forces between objects to be either attractive or repulsive. It is most frequently seen in magnetic materials that can be either temporarily or permanently magnetized by a magnetic field, such as iron, cobalt, and nickel.</li>
+</ul>
+
+<p>The strongest magnetic force is found at the north and south poles of magnets. Like poles repel each other, while opposite poles attract. Magnetism is very important in physics and everyday technology. Devices such as electric motors, generators, compasses, and magnetic storage systems rely on magnetism to work.</p>
+
+<p><strong>Magnetism and Magnetic Materials</strong></p>
+<p>Objects made of magnetic materials like iron, steel, nickel, and cobalt can be attracted to magnets. However, materials such as rubber, paper, wood, and plastic are not attracted to magnets. These materials are considered non-magnetic because they do not respond to magnetic fields.</p>
+<img src="images/materials.png" alt="materials" style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+
+<p><strong>Magnetic Poles</strong></p>
+<p>A magnet's poles are the areas where the magnetic force is strongest. Most magnets have two poles called the north pole and the south pole. When two similar poles are brought close together, they repel each other. When opposite poles are brought close together, they attract each other.</p>
+
+<p>Permanent magnets such as bar magnets are made from magnetically hard materials like steel. These materials keep their magnetism even after being magnetized. Magnetically soft materials, like iron, lose their magnetism quickly, which makes them useful for temporary magnets.</p>
+<img src="images/poles.png" alt="changes" style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+
+
+<p><strong>Magnetic Field</strong></p>
+<p>The area around a magnet where magnetic forces can be felt is called a magnetic field. Although magnetic fields cannot be seen directly, they can be observed using iron filings or compasses. These tools show the pattern and direction of the magnetic field.</p>
+
+<p>The magnetic field lines:</p>
+<ul class="star-list">
+<li>Show the shape of the magnetic field.</li>
+<li>Show the direction of magnetic force. The field lines travel from the north pole to the south pole.</li>
+<li>Show the strength of the magnetic field. The field is strongest where the lines are closest together.</li>
+</ul>
+<img src="images/magneticfield.png" alt="changes" style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+
+
+<p><strong>Magnetic Induction</strong></p>
+<p>Magnetic induction occurs when an object made from a magnetic material, such as an iron nail, is placed inside a magnetic field and becomes magnetized. In magnetically soft materials like iron, this magnetism is temporary and disappears when the magnet is removed.</p>
+<p>However, if the object is made from a magnetically hard material such as steel, it may retain some of its magnetism even after the magnet is removed.</p>
+<img src="images/magneticintro.png" alt="changes" style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+
+
+<p><strong>Magnetization</strong></p>
+<p>Magnetization is the process of creating magnetism in a material by aligning its magnetic domains. In materials like iron, the magnetic domains normally point in random directions. When an external magnetic field is applied, the domains align in the same direction, producing a magnetic field.</p>
+<p>Some materials remain magnetized even after the external magnetic field is removed.</p>
+
+<p><strong>Demagnetization</strong></p>
+<p>Demagnetization is the process of removing magnetism from a material. This happens when the magnetic domains that were aligned become randomly arranged again. This can occur when the material is heated, struck, or exposed to a magnetic field in the opposite direction.</p>
+
+<p><strong>Electromagnetism</strong></p>
+<p>Electromagnetism occurs when an electric current produces a magnetic field around a wire. The magnetic field forms circular patterns around the wire. The direction of the magnetic field can be determined using the right-hand grip rule.</p>
+<p>If the wire is coiled into a solenoid, the magnetic field becomes stronger and behaves like a bar magnet with a north and south pole.</p>
+<img src="images/electromagnetism.png" alt="changes" style="width:100%; max-width:400px; display:block; margin-top:15px; margin-bottom:15px; border-radius:12px;">
+<iframe width="460" height="315" src="https://www.youtube.com/embed/LTfP8yPAVFw?si=NJeFmlj6io37qcxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<ul class="star-list">
+<li><a href="https://phet.colorado.edu/sims/html/magnets-and-electromagnets/latest/magnets-and-electromagnets_all.html">Magnet and electromagnet simulation</a></li>
+<li><a href="https://javalab.org/en/magnetic_field_around_a_wire_en/">Magnetic field around a wire simulation</a></li>
+<li><a href="https://javalab.org/en/magnetization_en/">Magnetization of paramagnetic substance simulation</a></li>
+</ul>
+
+<p><strong>Sources:</strong></p>
+<ul class="star-list">
+<li>https://www.britannica.com/science/magnetism</li>
+<li>https://nbaem.com/magnetization-and-demagnetization-for-permanent-magnet</li>
+<li>Pearson Edexcel Physics Textbook</li>
+<li>Magnetism Part 1 & 2</li>
+</ul>
+</div>
+</div>
+
+<a href="index.html" class="back-btn">← Back</a>
+
+<img src="images/usagichibi.png"
+alt="usagi"
+class="chiikawa">
+
+</body>
+</html>
