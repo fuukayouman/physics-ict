@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  background-image: url('https://i.pinimg.com/736x/c6/d6/0f/c6d60f063622785eb07b8e4243241974.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Comic Neue', cursive;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: 40px;
+  padding-bottom: 120px;
+
+  color: #3a2b5c;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(15px);}
+  to {opacity:1; transform: translateY(0);}
+}
+
+.page-title {
+  background-color: rgba(255,255,255,0.9);
+  padding: 15px 40px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  box-shadow: 0 6px 12px #b8fbcb40;
+}
+
+.container {
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px #b8fbcb40;
+
+  max-width: 800px;
+  width: 100%;
+}
+
+.text {
+  padding: 30px;
+  text-align: center;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 15px;
+  margin: 20px auto;
+  display: block;
+}
+
+.back-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 12px 22px;
+  background-color: #d7f0da;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+
+  box-shadow: 0 4px 10px rgba(217, 245, 225, 0.4);
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #afceb1;
+  transform: translateX(-50%) translateY(-3px);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page-title">
+About Us ✦₊˚
+</div>
+
+<div class="container">
+<div class="text">
+
+
+<p>
+Hello! We are <b>Lorraine, Lourdes, Neysa, and Naeva</b> from class <b>9D</b>.
+</p>
+
+<p>
+This website was created as our <b>Physics review project</b>.  
+We organized the material from Grade 7–9 to help students review important
+concepts such as measurement, units, and scientific tools.
+</p>
+
+<p>
+We hope this website helps make studying physics easier and more fun! ✧
+</p>
+
+</div>
+</div>
+
+<a href="index.html" class="back-btn">← Back</a>
+
+</body>
+</html>
